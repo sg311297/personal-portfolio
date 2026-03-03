@@ -437,4 +437,181 @@ footer {
     nav {
         padding: 1rem 5%;
     }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 90%;
+    }
+}
+
+/* Card Styling */
+.card-header {
+    margin-bottom: 0.5rem;
+}
+
+.card-header h3 {
+    display: inline-block;
+    color: var(--accent);
+    margin-right: 0.5rem;
+}
+
+.card-header .company {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.card-content {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+.card-content li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+.card-content li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* Skills Container */
+.skills-container {
+    padding: 0 10%;
+}
+
+.skill-category {
+    margin-bottom: 3rem;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.skill-category h4 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+/* Education Card */
+.education-card {
+    border: 2px solid rgba(56, 189, 248, 0.3);
+}
+
+.education-card .grade,
+.education-card .achievement {
+    color: var(--primary);
+    margin-top: 0.5rem;
+}
+
+/* Achievements Section */
+.achievements-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 10%;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.achievement-group {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(56, 189, 248, 0.05) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 112, 243, 0.2);
+    transition: all 0.3s ease;
+}
+
+.achievement-group:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(56, 189, 248, 0.1) 100%);
+    border-color: var(--accent);
+    box-shadow: 0 8px 32px rgba(0, 112, 243, 0.3);
+    transform: translateY(-5px);
+}
+
+.achievement-group h4 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.achievement-group .achieve-list {
+    width: 100%;
+    border-bottom: none;
+}
+
+.achievement-group .achieve-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+    color: rgba(248, 250, 252, 0.9);
+}
+
+.achievement-group .achieve-list li:last-child {
+    border-bottom: none;
+}
+
+/* Contact Section */
+#contact {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(0, 112, 243, 0.05) 0%, rgba(56, 189, 248, 0.05) 100%);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.contact-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(56, 189, 248, 0.05) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 112, 243, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    min-width: 250px;
+    text-align: left;
+}
+
+.contact-item:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(56, 189, 248, 0.1) 100%);
+    border-color: var(--accent);
+    box-shadow: 0 8px 32px rgba(0, 112, 243, 0.3);
+    transform: translateY(-5px);
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    min-width: 60px;
+    text-align: center;
+}
+
+.contact-item h4 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.contact-item a,
+.contact-item p {
+    color: rgba(248, 250, 252, 0.9);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: var(--glow);
+    text-decoration: underline;
 }
